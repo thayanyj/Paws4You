@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="orderStyle.css" />
+
+    <script langauge="javascript">
+      function showForm1(){
+          document.getElementById('form1').style.display="block";
+          document.getElementById('form2').style.display="none";  
+      }
+      function showForm2(){
+          document.getElementById('form2').style.display="block";
+          document.getElementById('form1').style.display="none";  
+      }
+    </script> 
+
+    <title>Paws 4 You | Order</title>
+  </head>
+
+  <body>
+   <nav class="nav">
+      <div class="container">
+        <h1><a href="home.html"><img class = "logo1",  src="pawslogo.png" alt="Paws 4 You Logo"></a></h1>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pets.html">Paws</a></li>
+          <li><a href="order.html" class="current">Order</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="form1" name="form1">
+      <h1> Form 1 </h1>   
+      <form id="frm1" name="frm1">
+          Form 1 text 1 <input type="text" id="frm1txt1" name="frm1txt1"/> <br>
+          Form 1 text 2 <input type="text" id="frm1txt2" name="frm1txt2"/> <br>
+        <input type="submit" id="frm1btn1" name="frm1btn1" value="submit"/> <br>
+      </form>
+    </div>
+    <div id="form2" name="form2" style="display:none">
+      <h1> Form 2 </h1>   
+      <form id="frm2" name="frm2">
+          Form 2 text 1 <input type="text" id="frm2txt1" name="frm2txt1"/> <br>
+          Form 2 text 2 <input type="text" id="frm2txt2" name="frm2txt2"/> <br>
+        <input type="submit" id="frm2btn1" name="frm2btn1" value="submit"/> <br>
+      </form>
+    </div>
+    <div id="form1" name="form1">
+      <h1> Show/Hide buttons </h1>    
+      <form id="ctrl" name="ctrl">
+          <input type="button" id="ctrlbtn1" name="ctrlbtn1"  value="Show form 1" onclick="showForm1();"/> &nbsp
+          <input type="button" id="ctrlbtn2" name="ctrlbtn2"  value="Show form 2" onclick="showForm2();"/> <br>
+      </form>
+    </div>
+
+    <div class="pcontainer">
+      <div class="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="circle active">1</div> 
+        <div class="circle">2</div> 
+        <div class="circle">3</div> 
+        <div class="circle">4</div> 
+      </div>
+
+      <button class="btn" id="prev" disabled>Prev</button>
+      <button class="btn" id="next">Next</button>
+    </div>
+
+    <div class="endoptions">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pets.html">Paws</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <script src = "orderScript.js"></script>
+  </body>
+
+</html>
